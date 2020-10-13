@@ -1,0 +1,5 @@
+Write a recursive program (Python or C++ programming language) for next requirements. You can use and
+extend for implementation the C++/Python model available in /Lab/R1, this model already containing recursive
+implementations for creating, printing and destroying of a List.
+3. a. Check if a list is a set.
+b. Determine the number of distinct elements from a list.
