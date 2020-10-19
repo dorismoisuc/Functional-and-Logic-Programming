@@ -1,0 +1,15 @@
+% member(e- element, l- list)
+% flow model: (i,i) - determinist, (o,i) - nedeterminist
+% mathematical model:
+% member(e,l1l2...ln) = { false, if n=0
+%                         true, if l1=e
+%                         member(e,l2l3...ln), otherwise }
+
+% difference(l- list, p- list, res- list)
+% flow model: (i,i,o)
+% mathematical model:
+% difference(l1l2...ln,p1p2...pm) = { [], if n=0
+%                                     difference(l2l3...ln,p1p2...pm),
+%                                     if l1 e p1p2...pm
+%                                     l1 U difference(l2l3...ln,p1p2...pm)
+%                                                               ,otherwise
